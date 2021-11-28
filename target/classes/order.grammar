@@ -1,3 +1,0 @@
-<order> = order <order items> [bonus code <bonus code>];
-<order items> = <order item> | <order item> (and <order item>)*;
-<order item> = <number> <item> | <number> <item> with <extra>;
