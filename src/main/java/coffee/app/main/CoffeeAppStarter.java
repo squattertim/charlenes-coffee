@@ -9,7 +9,12 @@ public class CoffeeAppStarter {
         CoffeeApplication application = new CoffeeApplication();
 
         try {
-            application.bootstrap(args[0]);
+
+            if(args.length == 1) {
+                application.bootstrap(args[0]);
+            } else {
+                application.bootstrap("src/main/resources/itemsDb.csv");
+            }
 
             application.run();
 
